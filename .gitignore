@@ -1,0 +1,12 @@
+.DS_Store
+.idea
+*.log
+tmp/
+
+.ccls-cache
+*.o
+slstatus
+slstatus.1
+
+*.rej
+*.orig

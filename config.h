@@ -65,7 +65,7 @@ static const char unknown_str[] = "--";
  */
 static const struct arg args[] = {
 	/* function      format         argument */
-	{ num_files,     "[  %s]",     "/home/alex/.mail/mailbox.org/Inbox/new" },
+	{ num_files,     "[  %s]",     "/home/alex/.local/share/mail/mailbox/INBOX/new" },
 	{ battery_perc,  " [  %s%%",   "BAT1" },
 	{ battery_state, " (%s)]",      "BAT1" },
 	{ wifi_essid,    " [  %s]",    "wlp2s0" },

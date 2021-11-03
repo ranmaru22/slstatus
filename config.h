@@ -64,10 +64,15 @@ static const char unknown_str[] = "--";
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  */
 static const struct arg args[] = {
-	/* function      format         argument */
-	{ num_files,     "[  %s]",     "/home/alex/.local/share/mail/mailbox/INBOX/new" },
-	{ battery_perc,  " [  %s%%",   "BAT1" },
-	{ battery_state, " (%s)]",      "BAT1" },
-	{ wifi_essid,    " [  %s]",    "wlp2s0" },
-	{ datetime,      " %s ",        "%a, %d %b  %H:%M" },
+	/* function      format, argument */
+	{ num_files,     "^c#ffe891^  ^d^%s", "/home/alex/.local/share/mail/mailbox/INBOX/new" },
+	{ separator,     "^c#545c5f^ | ", NULL },
+	{ battery_state, "^c#6fb593^%s ", "BAT1" },
+	{ battery_perc,  "^d^%s%%", "BAT1" },
+	{ separator,     "^c#545c5f^ | ", NULL },
+	{ wifi_essid,    "^c#91b9c7^  ^d^%s", "wlp2s0" },
+	{ separator,     "^c#545c5f^ | ", NULL },
+	{ datetime,      "^c#845a84^  ^d^%s ", "%a, %d %b" },
+	{ datetime,      "^c#e4e4e8^%s^d^", "%H:%M" },
+	{ separator,     "^c#545c5f^ |", NULL },
 };

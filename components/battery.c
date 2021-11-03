@@ -50,9 +50,10 @@
 			char *state;
 			char *symbol;
 		} map[] = {
-			{ "Charging",    "+" },
-			{ "Discharging", "-" },
-			{ "Full",        "o" },
+			{ "Charging",    "" },
+			{ "Discharging", "" },
+			{ "Full",        "" },
+			{ "Unknown",     "" }, /* my battery displays this instead of Full */
 		};
 		size_t i;
 		char path[PATH_MAX], state[12];
